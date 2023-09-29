@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+*::selection{
+    color: rgb(40, 255, 244);
+    background-color: #073a49;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: red; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.nav h2{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1.1vw;
+}
+.nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    color: rgb(255, 255, 255);
+    background-color: #2a454e;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.nav i{
+    font-weight: 800;
+    display: none;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: burlywood; */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4vw;
+    line-height: 4.4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left h1 span{
+    color: lightseagreen;
+}
+.left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    font-weight: 200;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 4vw;
+}
+
+/* Explore Now CTA */
+.content button{
+    font-size: 1.2vw;
+    padding: 1.2vw 2.2vw;
+    color: rgb(255, 255, 255);
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.right img{
+    height: 99%;
+    width: 100%;
+}
+.playbtn{
+    padding: 1vw 1.5w;
+    background-color: #2a454e;
+    color: white;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    font-family: futura;
+    opacity: 0;
+    scale: 0;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+
+/* PHONE VIEW */
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+    .nav button{
+        display:none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 9vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 4vw;
+        font-weight: 600;
+        width: 100%;
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+    .content button{
+        padding: 4vw 5vw;
+        font-size: 4vw;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+}
